@@ -1,0 +1,615 @@
+h5 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 30px;
+  border: none black solid;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: skyblue;
+}
+p {
+  color: #524f4f;
+  line-height: 2em;
+  word-spacing: 2px;
+  font-size: 1rem;
+}
+div.div_span {
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: burlywood;
+}
+span {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: green;
+  background: #ffffff96;
+}
+.green {
+  color: green;
+  font-style: normal;
+}
+h6 {
+  color: cornsilk;
+  background-color: #b24eda;
+  font-size: 1.2rem;
+}
+div.links {
+  margin: -1em;
+  /* background: 50px fixed green; */
+  background: url(../HTML/images/bulb.jpg) center/cover no-repeat fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 4vh;
+  position: fixed;
+  top: 1.5%;
+  padding: 12px;
+  font-weight: bold;
+  z-index: 5;
+}
+/* Pseud Class (link) */
+a#links:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+/* Pseudo Class (Hover)  */
+a#links:hover {
+  text-decoration: underline;
+  background-color: #89cfebc5;
+  transition: all 1s linear;
+  height: 1px;
+}
+/* Pseudo Class (Visited) */
+a#links:visited {
+  color: #af68af88;
+}
+/* Pseudo Classes (Active) */
+a#links:hover {
+  color: gold;
+}
+#typo {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: bold;
+  background: none;
+  color: purple;
+  text-transform: uppercase;
+  text-align: center;
+}
+div.notes {
+  width: 65vw;
+  height: auto;
+  background: #9492923b;
+}
+p#notes {
+  line-height: 1.8em;
+  color: blueviolet;
+  word-spacing: 0.1em;
+}
+.table {
+  width: fit-content;
+  background: yellowgreen;
+  border: 0.1em dashed black;
+}
+.big,
+.small,
+.folder {
+  min-height: 300px;
+  color: #5ef05e;
+  padding: 12px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.big {
+  background: url("../HTML/images/brick.jpg");
+  background-size: cover;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+.folder {
+  background: url(../HTML/images/Horse.jpg);
+  /* Repeating same image all over the div */
+  background-repeat: no-repeat;
+  /* Repeat image on only x-axis */
+  background-repeat: repeat-x;
+  /* Repeat image on only y-axis */
+  background-repeat: repeat-y;
+  /* Creating a space between images */
+  background-repeat: space;
+  /* background-repeat: round; */
+  background-position: center;
+}
+.small {
+  background: url(../HTML/images/smoke.jpg);
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-repeat: space;
+  background-size: cover;
+}
+/* Gradient Styling */
+div.grdt {
+  width: 300px;
+  line-height: 50px;
+  text-align: justify;
+  color: black;
+}
+#one {
+  width: 50%;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px;
+  /* background: linear-gradient(to top right, blue, white, red, black); */
+  background: radial-gradient(circle, #464141 20%, blue 50%, green 5%);
+}
+#two {
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  background: radial-gradient(circle, yellowgreen, yellow, pink);
+}
+#three {
+  background: linear-gradient(to top, black, white, cornsilk, gray, skyblue);
+}
+#four {
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 20%;
+  /* gradient was imported from colorzilla */
+  background: radial-gradient(
+    ellipse at center,
+    #ffb76b 0%,
+    #60b73afc 29%,
+    #ff7f04fc 30%,
+    #3994b5fc 42%,
+    #ffa73dfc 50%,
+    #ff7c00fc 51%,
+    #d4c217fa 77%,
+    #d343b6f7 100%
+  );
+}
+#five {
+  background: linear-gradient(
+      100deg,
+      rgba(68, 56, 68, 0.329),
+      rgba(29, 27, 24, 0.466)
+    ),
+    url(../HTML/images/plant.jpg) center/cover no-repeat fixed;
+  color: white;
+}
+#six {
+  background: linear-gradient(to top, orange, olive, aliceblue);
+}
+div#clear_float {
+  /* border: 1px solid; */
+  padding: 5px;
+  float: left;
+  height: 20%;
+  width: 23%;
+  /* box-sizing: border-box; */
+  margin: 2px;
+}
+/* Jump to top */
+/* .jump {
+  width: 100vw;
+  height: 5vh;
+  margin-bottom: 5px 20px;
+  /* border: 1px solid var(--rosegoldcolor); 
+  position: absolute;
+} */
+#jump {
+  text-decoration: none;
+  color: green;
+  padding: 5px;
+}
+div.media {
+  background: #5ef05e8c;
+}
+h3#media {
+  background: green;
+  color: white;
+  text-transform: capitalize;
+  font: 20px bold;
+}
+/* Screen Size Responsiveness */
+@media screen and (min-width: 576px) {
+  div.media {
+    background: #ffc0cb8c;
+    margin: 5px;
+  }
+  h3#media {
+    background: #808080b0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: 15px bold;
+    text-transform: uppercase;
+  }
+  p#media {
+    color: #928b8b;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 25px;
+  }
+}
+div#index {
+  width: 150px;
+  height: 200px;
+  box-sizing: border-box;
+  position: relative;
+}
+img#zindex {
+  position: absolute;
+}
+img.z1 {
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+img.z2 {
+  top: 10%;
+  right: 10%;
+  z-index: 2;
+}
+img.z3 {
+  top: 20%;
+  right: 20%;
+  z-index: 1;
+}
+/* Working With Pseudo Elements (::) */
+p.pseudo::before {
+  content: "Pseudo";
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+}
+p.pseudo::after {
+  content: "This is also a PSEUDO";
+  font-style: italic;
+  font-size: 1.6rem;
+  color: green;
+  background: #dfa1df91;
+}
+p.firstLineLetter::first-line {
+  font-weight: bold;
+  font-style: italic;
+}
+p.firstLineLetter::first-letter {
+  color: black;
+  background: #5ef05e;
+  font-size: 3rem;
+}
+/* Pseudo on Images */
+div#imgP {
+  width: 30vw;
+  margin: 30px;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  position: relative;
+}
+img.imgP {
+  width: 100%;
+  display: block;
+}
+#imgP::before {
+  content: "";
+  background: black;
+  border: 2px solid grey;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  z-index: -2;
+}
+#imgP::after {
+  content: "";
+  /* border: 2px solid red; */
+  background: #b24eda;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+#imgP:hover::before,
+#imgP:hover::after {
+  bottom: 0;
+  right: 0;
+  transition: all 1s linear;
+}
+/* Pseudo Root */
+:root {
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  --rosegoldcolor: #b76e79; /*Global variables*/
+  --winecolor: #722f37;
+  --coralcolor: #ff7f50b4;
+  --maintransition: all 5s ease-in-out;
+  --textshadow: -2px 3px 0px rgba(150, 150, 150, 1);
+  --boxshadow: 9px 12px 25px 3px rgba(0, 0, 0, 0.4);
+}
+p#pseudoHover:hover {
+  color: red;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  background-color: #5ef05e;
+}
+div li {
+  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+div.selectors p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b76e79;
+  background: black;
+}
+div.selectors ol > li {
+  background: #5ef05e;
+}
+div.selectors h3 {
+  font-size: 1rem;
+  background: #b76e79;
+  color: whitesmoke;
+}
+
+div.TransForm {
+  margin: 2px 50px;
+  width: 150px;
+  height: 200px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: url(../HTML/images/smooth.jpeg);
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+}
+div#translate {
+  transform: translate(60px, 25px);
+}
+div#scale {
+  transform: scale(-0.8, 1.5);
+}
+div#rotate {
+  transform: rotate(45deg);
+}
+div#skew {
+  transform: skew(-15deg, -10deg);
+}
+p.TransForm {
+  color: #e3bc9a;
+  background: #092cf079;
+  width: 6.5vw;
+  position: absolute;
+  bottom: -10px;
+  right: 50px;
+}
+div.TransI {
+  margin: 0 50px;
+  width: 150px;
+  height: 200px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: /*rightside */ 5px /*Bottom*/ 15px /*opacity*/ 20px /*around*/ 5px
+    grey;
+}
+div#wife {
+  background: url(../HTML/images/wife.jpg);
+  background-size: 100%;
+  transition-property: background border;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+}
+div#wife:hover {
+  background: url(../HTML/images/Modella.jpeg);
+  background-size: cover;
+  border-radius: 50%;
+}
+div#modella {
+  background: url(../HTML/images/HighFive.jpg);
+  background-size: 100%;
+  transition-property: background border;
+  transition-duration: 5s;
+  transition-delay: 1s;
+  transition-timing-function: ease-out;
+}
+div#modella:hover {
+  background: url(../HTML/images/pro.jpeg);
+  background-size: cover;
+  transform: rotate(360deg);
+}
+div#beauty {
+  background: url(../HTML/images/angel.jpg);
+  background-size: 100%;
+  transition: all 5s ease-in-out;
+  /* transition-duration: 5s;
+  transition-timing-function: ease-in; */
+}
+div#beauty:hover {
+  background: url(../HTML/images/wizgirl.jpg);
+  background-size: cover;
+  transform: skew(25deg);
+}
+.anime {
+  margin: 10px 75px;
+  width: 170px;
+  height: 210px;
+  display: inline-block;
+  /* animation-name: anime;
+  animation-duration: 15s;
+  animation-iteration-count: 3; */
+  animation: /*name*/ anime /*Duration*/ 25s /*count*/ infinite;
+  /* animation-fill-mode: forwards; */
+}
+#beaut {
+  background: url(../HTML/images/beaut.jpg);
+  background-size: cover;
+}
+#pro {
+  background: url(../HTML/images/pro.jpeg);
+  background-size: cover;
+  animation-fill-mode: forwards; /*This retains the value of the last properties in the keyframe*/
+}
+#angel {
+  background: url(../HTML/images/angel.jpg);
+  background-size: cover;
+}
+#wiz {
+  background: url(../HTML/images/wizgirl.jpg);
+  background-size: cover;
+}
+@keyframes anime {
+  20% {
+    box-shadow: 15px 10px 5px gray;
+  }
+  50% {
+    transform: skew(30deg);
+  }
+  60% {
+    transform: rotate(250deg);
+  }
+  70% {
+    background: url(../HTML/images/wife.jpg);
+    background-size: cover;
+  }
+  90% {
+    transform: translateX(200px);
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: translate(10px 50px);
+    background: url(../HTML/images/beauty.jpg);
+    background-size: 100%;
+  }
+}
+#var {
+  color: var(--winecolor); /*These variables are saved in :root element)*/
+  background: var(--coralcolor);
+}
+.fab {
+  margin: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 2rem;
+  right: -20rem;
+}
+.fas {
+  font-size: 1rem;
+  color: #ffffff50;
+  padding-left: 5px;
+}
+.fa-solid {
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin: 10px;
+}
+.fa-solid:hover {
+  background-color: #615e5e52;
+  border-radius: 50px;
+  transform: translateY(-15px);
+  transition: all 1s linear;
+}
+#insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2rem; /* change this to change the size*/
+}
+#textShadow {
+  text-shadow: 0px 5px 5px grey;
+}
+.flexContainer {
+  background: purple;
+  margin: 20px 5px;
+  width: 50vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /*This is responsible for horizontal alignment*/
+  align-items: center; /*This is responsible for vertical alignment*/
+}
+.flexContainer:hover {
+  box-shadow: var(--boxshadow);
+  border-radius: 15px;
+  transition: all 1s linear;
+}
+.Flexitems {
+  margin: 10px;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+  background: var(--coralcolor);
+}
+#icons {
+  background: none;
+}
+#grid {
+  background: #5b62c9;
+  margin: 10px;
+  /* width: 50vw; */
+  height: 300px;
+  display: grid; /*This property and value is used to change the default dispaly of the div tag container to a grid*/
+  grid-template-columns: auto auto auto; /*This property specifies the number of columns that the grid container would be divided into.*/
+  grid-template-rows: auto auto; /*This property specifies the number of rows that the grid container would be divided into.*/
+  /* justify-content: space-around;  */
+  /*This is responsible for horizontal alignment*/
+  /* align-content: center; */
+  /*This is responsible for vertical alignment*/
+  /* grid-column-gap: 50px;  */
+  /* This property specifies the gap between column items */
+  /* grid-row-gap: 150px;  */
+  /*This property specifies the gap between row items*/
+  /* grid-gap: 150px (rows) 50px (coln);  */
+  /*This property specifies the gap between the row/column items. It is a shorthand for column and row gap property*/
+
+  /* grid-col */
+  /* grid-area:20px ; */
+  /*Determine a grid item’s size and location within the grid by contributing a line, a span, or nothing (automatic) to its grid placement. Shorthand for 'grid-row-start', 'grid-column-start', 'grid-row-end', and 'grid-column-end'.*/
+}
+
+.grid {
+  margin: 10px;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 40px;
+  width: 70px;
+  text-align: center;
+}

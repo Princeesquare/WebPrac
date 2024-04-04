@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--for defining character set-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--used to define the webpage across devices-->
+    <meta name="keywords" content="HTML, CSS" />
+    <!--defines essential keywords on a webpage-->
+    <meta
+      name="description"
+      content="The best software Engineer in history. My HTML practice page"
+    />
+    <!--defines description for a webpage on search engines-->
+    <!--Page title on web browser-->
+    <title>Addie</title>
+    <!--CSS-->
+    <style>
+      em {
+        color: red;
+        font-style: italic;
+        font-weight: bold;
+      }
+      h1 {
+        color: green;
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 50px;
+      }
+      h6 {
+        color: purple;
+        font-size: medium;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: normal;
+      }
+      body {
+        background-color: #ccc5c579;
+      }
+      img {
+        border-style: groove;
+        border-radius: 20px;
+        border-color: #e4bf87;
+        object-fit: cover;
+      }
+    </style>
+    <link rel="stylesheet" href="./fontawesome-web/css/all.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link
+      style="border-radius: 50%"
+      rel="icon"
+      href="../HTML/favicon_io/A.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="links">
+      <a href="index.html">
+        <img
+          style="
+            border: 2px solid white;
+            margin: 0;
+            object-fit: cover;
+            width: 35%;
+            display: block;
+          "
+          src="./images/A_logo.png"
+          alt="Company logo"
+        />
+      </a>
+      <a href="./index.html"><i class="fas fa-home"></i></a>
+      <!--<a> is an ANCHOR element which is used to add links to the webpage-->
+      <a href="./BackPage.html" id="links">BackPage</a>
+      <!--forward slash (/) is used to link one page to another page in the webpage(not an external site) called a relative url-->
+      <!--linking to an external website-->
+      <a href="https://sis.ciu.edu.tr/users/login" target="_blank" id="links"
+        >CIU|SIS</a
+      >
+      <!--linking a mail should always start with mailto:-->
+      <a href="mailto:princeesquare@gmail.com" id="links">E-mail</a>
+      <!--use # plus an id name when jumping to a section of a page-->
+      <a href="#contact" id="links">ABOUT</a>
+      <a href="../_Projects/Coffee/Files/index.html" target="_blank" id="links"
+        >Coffee_Project</a
+      >
+    </div>
+    <!--Headings-->
+    <!--There are only 6 headings in HTML and each should be used hierarchically-->
+    <!--a webpage should have only 1 h1 heading for efficiency-->
+    <h1 id="heading_1">HTML STRUCTURE</h1>
+    <p>
+      The below image is the proper structure/syntax to be followed while
+      creating a webpage using HTML
+    </p>
+    <img
+      src="images/Structure.JPG"
+      alt="This is an image of the proper HTML structure/syntax"
+    />
+    <div class="notes">
+      <h2>NOTES</h2>
+      <p id="notes">
+        <!--the shortcut for a comment tag is using ctrl+(/)forward slash -->
+        &lt;h1&gt; is the most important heading <br />
+        <br />
+        &lt;p&gt; is a used to create paragraphs in the webpage. <br />
+        <br />
+        &lt;a&gt; is an ANCHOR element which is used to add links to the webpage
+        <br />
+        <br />
+        &lt;h1-h6&gt; is used to define headings on a webpage and the are used
+        according to headings and sub-headings. <br />
+        <br />
+        href is an attribute and it is short for <i>hyper-text referrence</i>
+        <br />
+        <br />
+        Lorem is used to create random words, when a number is added to it, it
+        declares how many random words are to be created.<br />
+        <br />
+        &lt;img src="" alt=""&gt; is used to import image files into a webpage,
+        the
+        <b>'src'</b> defines the source or location where the image will be
+        gotten from, while the <b>'alt'</b> defines the alternative text to
+        display in the event that the image file doesn't display. <br />
+        <br />
+        object fit is used in styling to make an image look original without
+        distortions. <br />
+        <br />
+        the shortcut for a comment tag is using ctrl+(/)forward slash. <br />
+        <br />
+        A link is an address, a url, a location of the target page <br />
+        <br />
+        A hyperlink is the element that the user can click on to get to the
+        target page.<br />
+        <br />
+        &lt;h6&gt;The least important heading <br />
+        <br />
+        using (#) within a link element denotes an empty link eg &lt;a
+        href="#"&gt; &lt;/a&gt;. <br />
+        <br />
+        <strong>sup and sub</strong> are elements used to create a superscript
+        and a sub-script. e.g Today is the 1<sup>st</sup> day the 12<sub
+          >th</sub
+        >
+        month of the year <br />
+        <br />
+        the element (ul) is used to create unordered list and it is used togther
+        with the list element (li). Unordered list is mostly used when
+        navigating on going to linked pages. Below is an example of unordered
+        listing. <br />
+        <br />
+      </p>
+      <ul>
+        <li><a href="/BackPage.html">Backpage</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">My Bank</a></li>
+      </ul>
+    </div>
+    <br />
+    <p>
+      in contrast, (ol) is used to create ordered listing. It is also used with
+      the list element (li) <br />
+      <br />
+      Below is an example of ordered listing. <br />
+      <br />
+    </p>
+    <ol>
+      <li><a href="/BackPage.html">BackPage</a></li>
+      <li>No link just an item on the list</li>
+      <li>Food</li>
+    </ol>
+    <br />
+    <p>
+      a nested list is a list within a list or simply called a sub-list. <br />
+      <br />
+      example is below <br />
+      <br />
+    </p>
+
+    <ol>
+      <li>
+        Food
+        <ul>
+          <li>Rice</li>
+          <li>Beans</li>
+          <li>Spag</li>
+        </ul>
+      </li>
+      <li>
+        Cars
+        <ul>
+          <li>Benz</li>
+          <li>Lexus</li>
+          <li>Bugatti</li>
+        </ul>
+      </li>
+    </ol>
+    <h3>FORMS</h3>
+    <p>
+      Forms are created by using the (forms) element. When the element is typed,
+      (name, id)attributes wld be required in the forms element and those would
+      be functional only within the javascript. The (id) attribute is important
+      when using labels as the (label) element with a (for) attributewould
+      require the input data in the (id) of the forms element. Within the forms
+      element, an element input would be required inorder for the user to input
+      the required information into the form. After the information has been
+      collected, a submit button would be needed to submit the form. Submit can
+      be written in two ways, (1) either by using a (button) element and an
+      attribute (submit) or by using an (input) element with an attribute
+      (type="submit"). <br />
+      <br />
+      (Input) element is used within the forms element to enable the user add
+      inputs into the forms element. With the (input) element, data types such
+      as
+    </p>
+    <ul>
+      <li>password</li>
+      <li>e-mail</li>
+      <li>text</li>
+      <li>date&time</li>
+      <li>etc</li>
+    </ul>
+    <p>can be collected from the user.</p>
+    <br />
+    <p>
+      (Label) is an element that is used to give a title to a required
+      information space. It goes along with the (for) attribute. The data in the
+      (for) attribute must match the data in the (id) attribute of the (input)
+      element. The paragraph (p) element can also be used in-place of a (label)
+      element. <br />
+      <br />
+      (Placeholder) is an element that is used to display a required information
+      to the user inside on a rectangular shape where the user is meant to type
+      in the information. With a (Placeholder), the guide would disappear as
+      soon as the user starts typing inside the info collector. <br />
+      <br />
+      (Value) is an attribute that does the same function as the Placeholder but
+      the information typed inside of the shape to give the user a guide to what
+      is needed does not disappear, the user would have to manually clear it and
+      start typing his/her own information. It can also be used to change the a
+      title of a button element. (Value) attribute is also used to send a
+      required data to the server <br />
+      <br />
+      (Textarea) element is a big textbox that is used by the user to give more
+      information about a a topic. It is followed by (name, id, cols, and rows)
+      the cols and rows is used to determine how many rows and column of text is
+      needed for the information to be provided. <br />
+      <br />
+      (Radio and checkbox) attributes are used to allow a user pick an option
+      from a listing. The option selected would be sent to the server using the
+      (value) attribute. The major difference between the (radio) and (checkbox)
+      attribute is that the radio allows only one selection as long as the
+      (name) attribute has the same data type while the checkbox allows multiple
+      selection. (checked) attirbute is added to the input element if a
+      particular option is to be checked by default. <br />
+      <br />
+      (Select) element is used to great a dropdown menu where list of options
+      awould be displayed to the user for selection. The selected option would
+      be sent to the server when the submit button is clicked. The (option)
+      attribute is written within the (select) element to create a list of
+      options for the user to pick from in the dropdown. <br />
+      <br />
+      Below is how the form element is used.
+    </p>
+    <br />
+    <form action="" id="">
+      <label for="name">Name</label> <br />
+      <br />
+      <input type="text" placeholder="First Name" id="name" />
+      <!-- placeholder disappears text while value is hard coded and stays in the input area -->
+      <input type="text" value="Last Name" /> <br />
+      <br />
+      <p>Country</p>
+      <input type="text" placeholder="Country of Citizenship" name="" id="" />
+      <p>E-mail</p>
+      <input
+        type="email"
+        placeholder="dommy@email.com"
+        name=""
+        id=""
+        required
+      />
+      <p>Password</p>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name=""
+        id=""
+        required
+      />
+      <br />
+      <br />
+      <!-- Using textarea to collect more info from a user. -->
+      <p>More about you</p>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Type in more details about you"
+      ></textarea>
+      <br />
+      <br />
+      <!-- using radio and checkbox -->
+      <h4>TERMS OF AGREEMENT</h4>
+      <p
+        style="
+          color: black;
+          border-width: 1px;
+          border-color: black;
+          border-style: solid;
+          background: #f1e7d9;
+        "
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolor
+        repellat ipsa laboriosam, tempora dolores amet, illum, minima labore
+        molestiae maxime earum enim ad quos eius fuga accusamus? Illum veritatis
+        fugit in, modi eligendi deleniti totam similique nobis eveniet
+        temporibus dolorum soluta ab voluptatum voluptas sequi assumenda
+        consequuntur delectus maiores. Voluptate aliquid exercitationem
+        adipisci. Tenetur quis iusto vel. Voluptate excepturi nisi incidunt
+        nulla sed velit nemo eaque id et minus sint quo eius ipsum, sit animi
+        explicabo quod illum iure vel? Quod, dolorum! Nihil delectus culpa modi
+        doloremque omnis similique rem, temporibus quis dolorem. Blanditiis
+        quasi excepturi modi maxime sequi. ipsum dolor sit amet consectetur
+        adipisicing elit. Neque, adipisci voluptatibus voluptatem corrupti vitae
+        minus quis corporis recusandae animi suscipit? ipsum dolor, sit amet
+        consectetur adipisicing elit. Dolor saepe perferendis distinctio
+        veritatis laudantium sit, voluptate doloremque animi repellendus
+        suscipit officia ea molestiae alias aperiam magnam optio ab quidem
+        officiis autem consectetur aliquid odio ut cupiditate cum! Voluptates
+        fugiat dolores soluta quibusdam vel, numquam fugit nam, exercitationem
+        voluptate, velit accusamus!
+      </p>
+      <p>Please click below to accept the terms of agreement</p>
+      <input type="radio" name="programming" id="" value="agreement" />Accept
+      <input type="radio" name="programming" id="" value="agreement" />Decline
+      <br />
+      <br />
+      <p>What places would you like to visit</p>
+      <input type="checkbox" name="places" id="" />London
+      <input type="checkbox" name="places" id="" />Canada
+      <input type="checkbox" name="places" id="" />America
+      <input type="checkbox" name="places" checked id="" />Nigeria <br />
+      <br />
+      <p>Please select your most recent certificate</p>
+      <select name="cert" id="">
+        <option value="GSCE">GSCE</option>
+        <option value="Bsc">Bsc</option>
+        <option value="Msc">Msc</option>
+        <option value="Phd">Phd</option>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Click To Submit" /> <br />
+      <br />
+      <p>The below button can also be used to submit the Form.</p>
+      <button>Submit</button>
+    </form>
+
+    <h4>TABLES</h4>
+
+    <div class="notes">
+      <p id="notes">
+        (table) is used to create a table element with (th) denoting the table
+        head, (tr) denoting the table rows and (td) denoting the data that will
+        be contained in the rows. <strong>Note</strong> there is no element for
+        creating columns because the (td) element aligns in form of columns.
+        <br />
+        <br />
+        Below is an example of a table. <br />
+      </p>
+    </div>
+
+    <div class="table">
+      <table>
+        <tr>
+          <th>S/N</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Emmanuel</td>
+          <td>Ezenwa</td>
+          <td>27</td>
+        </tr>
+        <!-- Second row of the table starts here -->
+        <tr>
+          <td>2</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>IMAGES</h2>
+    <p>You can click on the image to make it larger.</p>
+
+    <a href="images/prince.jpg">
+      <img
+        src="images/prince.jpg"
+        alt="This is my Photo."
+        style="width: 100px"
+      />
+      <br />
+      <br />
+    </a>
+
+    <p>
+      Click on the link below to view a Photo of my love. <br />
+      <br />
+      <br />
+      <br />
+    </p>
+    <a href="images/smooth.jpeg"> <em>My Love</em></a> <br />
+    <br />
+    <a href="images/smooth.jpeg" download>Download image</a> <br />
+    <p>
+      Download attribute is used to download files from a webpage and it is
+      added to the anchor element downloadable file.
+    </p>
+    <br />
+    <h3>RANDOM WORDS</h3>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam fugiat
+      cupiditate ipsa, officia eligendi delectus nisi sint ipsam earum sit est
+      quod consequatur, tempora tenetur.
+      <!-- Entities -->
+      how to use greater than and less than signs or simply called Entities in
+      HTML, the entity to be displayed would be written inbetween (&) and (;)
+      signs eg. &lt;HTML&gt; or for copyright sign &copy;
+    </p>
+    <h3 id="contact">ABOUT US</h3>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sit
+      consequuntur reprehenderit culpa itaque placeat provident rem fuga non
+      voluptas nobis cumque! Assumenda, esse ipsam explicabo aut ullam
+      doloremque ut deserunt iure nisi ab incidunt porro nesciunt beatae. Odit
+      atque tempora voluptas dignissimos provident nam. Nulla quos doloremque
+      praesentium quasi officiis, labore cumque. Molestiae reiciendis quia at
+      voluptatem eos accusamus corrupti delectus voluptatibus! Natus sit
+      eligendi eos, omnis illo aspernatur quae in earum quisquam deserunt
+      voluptas dolor reprehenderit. Assumenda tenetur maiores odit illo, quis
+      hic reprehenderit tempora voluptatem necessitatibus ratione! Autem aliquid
+      repudiandae quos rem soluta nesciunt excepturi, iure natus, laudantium
+      sunt dolorum debitis unde distinctio et totam earum saepe illum corrupti
+      dolore ut odio? Voluptatibus corporis sint, ipsa, ut nisi rem nobis quas
+      beatae dolorem voluptas iste, accusamus iure expedita? Quidem, maxime
+      tempore rem voluptate fugiat magnam debitis, ullam natus suscipit qui
+      harum, blanditiis consequatur nesciunt dolorem tenetur earum at! Dolor,
+      dolore fuga labore exercitationem distinctio quidem voluptate aliquam
+      cupiditate neque consequatur consequuntur eum corporis impedit amet facere
+      libero veniam expedita delectus minima! Repellat corrupti quos, veritatis
+      soluta rem repudiandae rerum veniam animi nihil maiores quam aspernatur
+      magnam non atque magni ipsam natus et est debitis quia voluptates
+      incidunt.
+    </p>
+    <br />
+    <h1>CSS</h1>
+    <br />
+    <h2>NOTES</h2>
+    <!-- Structure/Syntax -->
+    <p>
+      The syntax of css, should have a the following: selector (element that is
+      to be styled e.g h1 element), curly braces({}), declaration block,
+      property of the element e.g color, border,font etc, also value for the
+      property eg the color of the color property.
+    </p>
+    <p>There are 3 ways of using CSS, and they are</p>
+    <ul>
+      <li>CSS</li>
+      <li>Internal CSS and</li>
+      <li>External CSS</li>
+    </ul>
+    <br />
+    <br />
+    <!-- INLINE STYLING -->
+    <h3>INLINE CSS</h3>
+    <p>
+      Inline css is written inside the tag of the element that is required using
+      the element (style), inside the element style, properties/attributes that
+      are required such as font, collor, border etc would be declared. Inline
+      Css has a downside because it wld be slow and tedious to style every
+      single element one after the other. Although it is the strongest of all
+      types because if all 3 types are written for a particular element, the
+      inline would override the remaining 2. i.e the style declared in the
+      inline will be the only active style. eg of inline css is applied below.
+    </p>
+    <br />
+    <br />
+    <p
+      style="
+        border: 2px;
+        color: black;
+        text-indent: 5%;
+        line-height: 20px;
+        width: 20%;
+        border-style: dotted;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: red;
+        font-weight: bold;
+        font-style: normal;
+      "
+    >
+      Inline styling was used to style this text.
+    </p>
+    <br />
+    <hr />
+    <br />
+    <!-- INTERNAL STYLING -->
+    <h3>INTERNAL CSS</h3>
+    <p>
+      Internal css is written inside the head element by creating the element
+      (style), inside the style element, the element to be styled would be
+      declared and then properties that are required for the styling such as
+      font, color, border etc would be declared followed by the required values.
+      Internal css also has a downside because it wld clog the html document (it
+      is not flexible for multiple pages) as compared to the External CSS and
+      also every single element in the document would be stlyed one after the
+      other. For instance stlyling the h1 element, then image element and any
+      other element that requires styling. If an element is styled, the styling
+      affect all the elements of the same type written in any part of the HTML
+      doc. Although it is stronger than the external css because if they are
+      both written for a particular element, the internal css would override the
+      external css. i.e the style declared using the internal css will be the
+      active style. example of internal css is applied below.
+    </p>
+    <br />
+    <br />
+    <h6>THIS HEAD ELEMENT IS STYLED WITH INTERNAL CSS</h6>
+    <br />
+    <hr />
+    <br />
+    <!-- EXTERNAL CSS -->
+    <h3>EXTERNAL CSS</h3>
+    <p>
+      External css is written in a different file with the extension (.css), in
+      the a different file document and then linked to the html page using a
+      (link) element within the head element, (style) element is not needed, the
+      elements to be styled are declared and then the required properties and
+      value are also declared. For multiple pages, a link to the css should be
+      added to the html document if the same styling is needed, instead ot
+      copying and pasting styles as in internal css. A semi-colon is used after
+      the property before the value is declared i.e (color: red) The below id
+      and class heading is styled with external css. <br />
+      <br />
+      External css can also be used to style a group of elements, a comma (,)
+      should be added inbetween the elements e.g (h1,h2), whatever style is
+      written inside of the group would be active for all the elements that has
+      been grouped.
+    </p>
+    <hr />
+    <!-- IDs -->
+    <!-- CSS RULES -->
+    <!-- Selectors -->
+    <h6>SELECTORS</h6>
+    <p>Types of Selectors</p>
+    <ol>
+      <li>Element Selectors e.g (heading i.e h1-h6, p, ul, ol etc.</li>
+      <li>
+        Grouping Selectors e.g body, h1,h2(using comma to separate the elements)
+      </li>
+      <li>ID (#name) Selector</li>
+      <li>Class (.name) Selector</li>
+    </ol>
+    <br />
+    <br />
+    <!-- CSS INHERITANCE -->
+    <h6>CSS INHERITANCE</h6>
+    <p>
+      inheritance occurs when a style is given to an element and all other
+      element inside of the parent element takes/inherits the style of the
+      parent element
+    </p>
+    <!-- Declaration Block: codes within braces { } -->
+    <h6>Declaration Block</h6>
+    <p>
+      Declaration block in css starts with the braces {}. This means that all
+      the codes or elements that would be typed inside of the braces are called
+      declarations in the braces which signifies the block.
+    </p>
+    <!-- Declaration of property and the value: semi-colon must be used to close a declaration line -->
+    <h6>Declaration properties</h6>
+    <p>
+      Declaration properties are the elements that would be used for the
+      styling, such as colors, border, background etc. all these properties will
+      be followed by a colon (:) before the value of the property would be
+      declared. After the declaering the value, a semi-colon should be used to
+      close the property inorder for the style to effect on the webpage.
+    </p>
+    <h5>USING ID & CLASS</h5>
+    <p>
+      IDs are specific names given to an element. These unique names would be
+      used to style the element in the css file. ID is mostly used to style
+      headers, footers, menu etc. Remember the name attribute of all IDs to be
+      used should be unique else IDs of the same name would have the same
+      styling. In the CSS file, (#) would be written before the ID name to be
+      used. That is the syntax for calling the id. e.g #name{ the style
+      properties to be used}.
+    </p>
+    <p>
+      Class works more like IDs but Class is used when focusing on a group of
+      elements that would have the same type of styling. It is more flexible and
+      time-saving because all the elements that have the same class would be
+      have the same styling, in contrast to IDs where each element would have a
+      unique name and styled separately. In the CSS file, (.) would be written
+      before the ID name to be used e.g .name{ the style properties to be used}.
+      ID is mostly used to style group of headers, paragraphs, links etc
+    </p>
+    <p>
+      For instance in a case where there is a lot of elements of same headings
+      e.g (10 h3&lt;headings&gt; in a page) class element can be used to style 3
+      or 4 of them within one css declaration block but using id, each of the h3
+      element would have a unique name and then styled separately in different
+      blocks.
+    </p>
+    <!-- DIV AND SPAN ELEMENTS -->
+    <div class="div_span">
+      <h6>DIV AND SPAN ELEMENTS</h6>
+      <p>
+        DIV and SPAN are elements used for grouping. <br />
+        <br />
+        Div is used to group elements/characters to be styled and the styling
+        will take place in a declaration block and the elements within the div
+        takes the declared style. Div is a <span>block level</span> element and
+        it starts a new line when used. Span on the other hand is an
+        <span>inline level</span> element that is used to style characters
+        within the body of an element. i.e inline. The Class attribute can also
+        be used within <q>divs and spans</q> to give a stlye to a particular
+        class of the div or span.
+        <span class="green">
+          This paragraph is styled with div and also the words in italic,
+          including this one, they are styled with the span elements.
+        </span>
+      </p>
+    </div>
+    <!-- Last Rule, Specificity, Universal Selector (*) -->
+    <h6>Last Rule, Specificity, Universal Selector (*)</h6>
+    <p>
+      The last rule is where css uses the last rule and add it to the
+      stylesheet. The last declaration of same element in css is the only that
+      would be applied on the webpage. <br />
+      <br />Specificity is the measurement Specificity of elements in css.
+      <br />
+      <br />Universal selector selects all the elements in the webpage and it
+      has the least amount of Specificity. In the stylesheet it starts with (*)
+      Selector followed by the curly braces {} then the property(ies) that needs
+      reseting. It is mostly used to reset the default browser styles.
+    </p>
+    <!-- COLORS -->
+    <h6>COLOR NAMES (PROPERTIES, RGB, RGBA,HSL, HEX(#), VS_Colors)</h6>
+    <p>
+      The color property is responsible for the color of the page or elements
+      also <em>background-color</em> is also used to color the background of
+      either the page, elements or characters. <br />
+      <br />There are 140 color names in vs code. A color-name can be used to
+      give colors such as red, white, yellow, turquoise etc. <br />
+      <br />
+      RGB Color is used to get extensive colors within the Red Green Blue colors
+      by assigning values between <em>0-255</em> for each of R,G or B in a
+      bracket. The syntax is as follows RGB(0-255,0-255,0-255), the values will
+      be changed according to the required color. e.g RGB (135,206,235) for
+      skyblue color. <br />
+      <br />
+      Another color name is RGBA which is the same as RGB except for the
+      <q>a</q> that is used to determine the opacity/transparency of the color,
+      the opacity has a value of <em>0-1</em>. The RGBA is mostly used within
+      background-color property. e.g RGBA (255,248,220,0.5) cornsilk color with
+      opacity of 0.5. <br />
+      <br />
+      Another color value is HSL this value is uses the aspect of RGB value but
+      the difference is instead of assigning values, HSL uses (%) to determine
+      the color to be displayed. <br />
+      <br />
+      Hexadecimal values is another way to insert colors using hexadecimals of
+      alphabets between A-F (A being the least with a value 10 and F being the
+      highest with a value 15) and numbers between 1-9. The syntax of using hex
+      starts with a (#) then the aplhanumerical values, e.g #ff0000 for color
+      red. Note that the hex values should not be more than 6 characters. <br />
+      <br />
+      VS code offers color variants, it can be used typing the property color
+      and then typing any color value, then hover on the color and then a color
+      pallete would open up for more color and opacity options. <br />
+      <br />
+      The following link would navigate you to an external site where you can
+      get more cool colors. Use your space bar to go between different color
+      pallete.
+      <a href="https://coolors.co/" target="_blank">More Colors</a> <br />
+      <br />
+    </p>
+    <h6>CSS UNITS (Font-size, width, height, pixel etc)</h6>
+    <p>
+      Font-size is used to determine the font size of characters in the element.
+      The preferred value should be used in (rem) so that the fonts in the
+      webpage can be responsive when the user changes the font size on the web
+      browser.
+      <br />
+      <br />Width and Height is used to determine the width and the height of
+      characters in an element. <br />
+      <br />
+      Pixel(px) is an absolute value of measurement(px for short) that
+      determines the measurement of the property selected for the styling. 1
+      pixel is equivalent to 1 point on a screen. A pixel value stays the same
+      across all screen types in a webpage. <br />
+      <br />
+      A percentage value (%) is a value used in styling, the % value is a
+      relative value of measurement that depends on the parent tags to function.
+      It takes the percentage of the absolute measurement style. <br />
+      <br />
+      Em is also a relative measurement value. 1em = 16px
+      <!--(16px is the Default font size for a browser)-->
+      The em value depends on the parent tag values. <br />
+      <br />
+      Rem is also a relative measurement value. The em value depends on the root
+      tag values in the webpage i.e HTML tag. <br />
+      <br />
+      vh & vw are absolute measurement value that takes a percentage of the
+      browser screen. They are mostly used to with width and heigh properties to
+      style headers and banners. <br />
+      <br /><br />
+      <br />
+      <strong>Default Browser Style and Google DevTools</strong> <br />
+      <br />
+      To check the default browser styles, go to your browser, right click and
+      then click on <em>inspect</em> and on the elements tab to see the default
+      browser styles. <br />
+      <br />
+      Calc() is used to perform math operations in css and also used to mix and
+      match values.
+    </p>
+    <h6 id="typo">Typography</h6>
+    <p>
+      Typography is the way text is arranged and presented in the webpage.
+      <br /><br />
+      Font-family is the parent font for similar fonts in a font stack. <br />
+      Font-stack is the list of the similar fonts in a font family<br />
+      Generic fonts are "serif", "sans-serif", "cursive", "fantasy",
+      "monospace". These fonts are the most recognised font family. If the font
+      stack in them is not available on a web browser, the browser automatically
+      uses fonts that are most similar to the generic font family.<br />
+      Google fonts are extra fonts available on google for more design choices.
+      Click on the following link to view
+      <a href="https://fonts.google.com/">Google-Fonts</a> <br />
+      Font weight and style <br />
+      <strong>Text properties</strong> <br />
+      Text align, indent, transform, decoration, word-spacing, line height,
+      letter spacing. <br />
+    </p>
+    <div class="notes">
+      <h6>CSS BOX MODEL</h6>
+      <p id="notes">
+        Css displays elements as a box, three properties are going to be applied
+        within the box and those properties are <br />
+        1. Padding: This deals with the distance between the content and the
+        border edge. Padding values can be written for each sides of the pad,
+        although a shorter way of writting the values is by grouping top and
+        bottom, giving them same value, if you'd like them to have same value,
+        then grouping the left and right sides, also assign a single value. e.g
+        Padding: 25px 50px (The 25px applies to the top and bottom while the
+        50px applies to the left and right padding.) Another way of writing the
+        padding is by assigning different values in the padding element. e.g
+        Padding: 10px 20px 30px 40px (10px applies to the top, 20px applies to
+        the right, 30px applies to the bottom and then 40px applies to the
+        left.)<br />
+        <br />
+        2. Margin is the distance between content and the edges of the screen or
+        some other element. Margin values can be written for each sides of the
+        margin, although a shorter way of writting the values is by grouping top
+        and bottom, giving them same value, if you'd like them to have same
+        value, then grouping the left and right sides, also assign a single
+        value. e.g Margin: 25px 50px (The 25px applies to the top and bottom
+        while the 50px applies to the left and right padding.) Another way of
+        writing the Margin is by assigning different values in the Margin
+        element. e.g Margin: 10px 20px 30px 40px (10px applies to the top, 20px
+        applies to the right, 30px applies to the bottom and then 40px applies
+        to the left.) <br />
+        <br />
+        Margin with a negative value overlays elements. eg. margin-top:
+        <em>-</em>100px. 3. Border is the box that goes around an element.
+        Border can be designed with different values, such as the color, width,
+        style,radius etc. each and every design can be written on separate
+        lines, eg. <br />
+        1. border-color: green, <br />2. border-style: solid, <br />3.
+        border-width 20px etc.
+        <br />
+        A shorter way of writing the borders is a single line is to group, the
+        style, width and color together. The order of prefference would be width
+        value first followed by the style and then the color. eg. border: 20px
+        solid green. <br /><br />
+        Border-radius is used to make the edges of a border curve. The extent of
+        the curve is dependent on the value given to the border-radius property.
+        <br />
+        Box-sizing with the property of border box
+      </p>
+    </div>
+    <h6>OUTLINE and OFFSET</h6>
+    <p>
+      Outline is more like a border around a content but the difference between
+      border and outline is that with an outline-offset property, the border
+      around the element can be moved in and out of the content, given it a
+      different look and feel. a negaive value of outline-offset takes the
+      border further in while a positive outline takes the border further out.
+    </p>
+    <br />
+    <div class="notes">
+      <h6>DISPLAY PROPERTY</h6>
+      <p id="notes">
+        Block and inline property. A (div) element is a block element. Block
+        element always starts a new line and takes full width. <br />
+        A (span) is an inline element. An inline doesn't start a new line and
+        only take up as much as the content space. <br /><br />When a display
+        property is used with an assigned value, it renders the element
+        according to the assigned value. For instance is a display peoperty with
+        a value of inline in added to a div element, the content will be
+        rendered with an inline style as opposed to the default property of a
+        div. The same would happen if a display property with the value block is
+        added to a span element. The contents would be rendered with a block
+        style. <br /><br />
+        Horizontal centering is for aligning elements to the center. For inline
+        elements, the text align property can be used to align the text but for
+        block level elements, margin with a value of auto for the left and the
+        right would align the contents of the block elements to the left. <br />
+        <br />Browsers respect top bottom margin and padding for block elements
+        but doesn't for inline element. <br /><br />list-style-type is an
+        element used to style the numbering of un-ordered list (ul), for links
+        in a list (ul or ol) to have top and bottom margin, first the display
+        property has to be set to block because it is by default an inline style
+        and browers do not render top and bottom margin for inline elements.
+        <br /><br />Inline-block is a property used with display element to make
+        an inline element render a top and bottom margin by making the element a
+        block property while maintaining it's inline position. <br /><br />
+        Display property set to a value of none makes an element disappear from
+        the browser page, the element with this property would not be displayed
+        on the webpage and devtools. <br /><br />
+        Opacity is an element that has a value between 0-1, it used to set the
+        transparency level of an element. Just like <q>a</q>in rgba value of the
+        color element, but this time, it is applied to elements.<br /><br />Visibility
+        element is used to make an element visible or hidden from the webpage
+        but in devtools it will be evident that there is an element not
+        displaying on the webpage.
+      </p>
+    </div>
+    <br />
+    <p style="line-height: 25px">
+      This paragraph Shows how to work with images as a background. Below are
+      the major properties and values used when working on the background of a
+      webpage using an image. <br /><br />
+      *background: url(../HTML/images/bulb.jpg); <br />
+      *background-position: center; This places the background image in
+      different positions in the div <br />
+      *background-repeat: no-repeat; This makes sure that the background image
+      is not repeating to fill the div<br />
+      *background-attachment: fixed; This makes sure that the background image
+      is fixed while the text still moves.<br />
+      *display: flex;<br />
+      *background-size: cover; This property resizes the background image to fit
+      or fill the div<br />
+      *justify-content: center; This property aligns the content of the div
+      element to horizontal justify and then center<br />
+      *align-items: center;<br />
+      *text-align: center;<br />The display below is the final result of
+      background properties.
+    </p>
+    <br /><br />
+    <div class="big">
+      <h3>BACKGROUND IMAGES</h3>
+    </div>
+    <div class="small">
+      <h3>small images</h3>
+    </div>
+    <div class="folder">
+      <h3>folder image</h3>
+    </div>
+    <br />
+    <div class="grdt">
+      <h3 id="one">Gradient 1 (Radial)</h3>
+      <h3 id="two">Gradient 2(linear)</h3>
+      <h3 id="three">Gradient 3</h3>
+      <h3 id="four">Gradient 4</h3>
+      <h3 id="five">Gradient 5</h3>
+      <h3 id="six">Gradient 6</h3>
+      <p style="line-height: 20px">
+        Gradients are used to add overlays for background images. The
+        linear-gradient() is the value of the background propert in CSS that
+        creates an image consisting of a progressive transition between two or
+        more colors along a straight line. Its result is an object of the
+        gradient data type, which is a special kind of image. The () is where
+        the degree and colors of progressive transition would be written.
+        <br /><br />
+        Note that you can style your background image inside the linear gradient
+        property instead of writting all of the background properties. The
+        background styling should follow this order: postion/size repeat and
+        then attachment. e.g linear-gradient (rgba(0,2,5,0.3), rgba(5,2,4,0.25),
+        url(the image path) center/cover no-repeat fixed). <br />
+        To get help with generating gradients, click to go to
+        <a
+          href="https://www.colorzilla.com/gradient-editor/"
+          target="_blank"
+          style="color: orange; text-decoration: none; font-weight: bold"
+          >Gradient generator</a
+        >
+      </p>
+    </div>
+    <div>
+      <p>
+        Float is a property that is used to section a div side by side. It is
+        used with the clear property. Clear property is added to the subsequent
+        div inorder to make it align under or by the side of the float property.
+      </p>
+    </div>
+    <div id="clear_float" class="banner">
+      <img src="./images/pattern.jpg" alt="nice view" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sint
+        nisi, esse commodi quis doloribus harum architecto beatae dignissimos
+        dolores? Et, porro!
+      </p>
+    </div>
+    <div id="clear_float" class="post">
+      <img src="./images/pattern.jpg" alt="nice view" />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora,
+        error.
+      </p>
+    </div>
+    <div id="clear_float" class="product">
+      <img src="./images/pattern.jpg" alt="nice view" />
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minima
+        sequi explicabo animi nobis soluta assumenda dignissimos totam
+        cupiditate sint!
+      </p>
+    </div>
+    <div id="clear_float" class="header">
+      <img src="./images/pattern.jpg" alt="nice view" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam
+        maiores eos reprehenderit voluptatum fugiat.
+      </p>
+    </div>
+    <div style="clear: both"></div>
+    <div>
+      <h3>Position property</h3>
+      <p>
+        Static <br />Relative <br />Absolute <br />Fixed <br />Top,Bottom,Left
+        and Right properties.
+      </p>
+    </div>
+    <div class="media">
+      <h3 id="media">Media Queries</h3>
+      <p id="media">
+        Media queries has to start with the this syntax @media screen and
+        (min-width: size e.g 550px){ followed by the elements that requires
+        styling.}
+        <br />
+
+        Responsive design involves styling elements to display on different
+        screen sizes using Min-width and Max-width. Where min-width is used to
+        determine from what size of the screen the element style would display
+        and max-width is used to determine up to what screen size the style
+        would be displayed. Note that any mistake (even a space between letters)
+        in the media query syntax would prevent the style from rendering. You
+        will see the effects of media query on this paragraph if your screen
+        size gets smaller. <br />
+        <br />
+
+        Z-index (Z-axis): This property places elements, images to be precise
+        behind or in front of another image depending on the attributed value
+        with zero (0) being the default value. A positive value brings an image
+        to the front while a negative values takes it behind another. Below is
+        the resulting effect of a <em>z-index on an image.</em>
+      </p>
+    </div>
+    <div id="index">
+      <img id="zindex" class="z1" src="./images/plant.jpg" alt="" />
+      <img id="zindex" class="z2" src="./images/plant.jpg" alt="" />
+      <img id="zindex" class="z3" src="./images/plant.jpg" alt="" />
+    </div>
+    <br />
+    <div class="pseudo_element">
+      <h3>Pseudo Elements (::)</h3>
+      <p class="pseudo">
+        is used to insert contents inline <em>before and after</em> an element
+        and also to style the first-line / first-letter of a paragraph. The
+        syntax should be (element::before or after{content:" characters "
+        followed by the styling properties.} for the before and after then
+        p::first-letter{} and p::first-line{} ) It is mostly used on an image
+        design. For pseudo styling, the property <em>content</em> is required
+        even if it to be left empty without characters. Also before and after
+        doesn't work with an image element.
+      </p>
+      <p class="firstLineLetter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab
+        officiis suscipit quibusdam, debitis dolor commodi molestias adipisci
+        provident sed. ipsum dolor sit
+        <span
+          >This paragraph is styled with first letter and first line
+          pseudo_element</span
+        >
+        amet consectetur adipisicing elit. Aspernatur laboriosam nobis nisi
+        veniam fugiat! Perferendis, dolor doloribus earum unde eligendi ullam.
+        Dicta cum asperiores, voluptatibus alias sit delectus quod odit.
+      </p>
+      <h3>PSEUDO CLASSES (:)</h3>
+      <p>
+        The syntax for a pseudo element would be (element:pseudo style{styling
+        properties} e.g p:hover{styling properties}). Below a few pseudo classes
+        would be explained with examples embedded in them.
+      </p>
+      <p id="pseudoHover">
+        First we would look at the Hover class (:hover) The hover is a class in
+        the pseudo element styling that makes the state of an element change
+        when the mouse is hovered over the element in the webpage and the chnage
+        would be based on the pseudo property used under the the hover class.
+        Hover can be used on any element including links (a) An example where it
+        used on links would be seen when you hover over the header above that
+        contains links..
+      </p>
+      <p>
+        Link, visited link and hover link and active link <br />
+        Link pseudo class is used to design links in the webpage, given them a
+        particular design to identify them as links. The syntax for wrriting it
+        in the css file is (element(class/id):link{styling properties}). <br />
+        <br />
+        Visited link pseudo class is used to stlye a link, identifying that the
+        link has been visited before. The link could have an identifying
+        property such as color or text design or whatever the programmer wishes
+        to use as an identifier. The syntax would be
+        (element(class/id):visited{styling property}). <br />
+        <br />Pseudo Hover class is the same as explained
+        <a href="#pseudoHover">above.</a> We would only use it here to style
+        link elements to add a style when it is being hovered in the webpage.
+        <br />
+        <br />
+        Active is used to style active links in the sense that it would give a
+        style when overed on, to show that the mouse is on the link to be
+        clicked and the syntax would be (element(class/id):active{styling
+        property}). <br />
+        This classes has been used in the header above for the links. Explore
+        the links on the header to see the styles. <br />
+        <br />
+        Pseudo Class (Root) is used to style the root element which is the HTML
+        tag in this case, the root class is used to style the full HTML document
+        as any style that is written in the root class, would be applied to the
+        whole page. It is usally used to modify element property values such as
+        background color, paragraph text size, etc.
+      </p>
+    </div>
+    <div id="imgP">
+      <img
+        class="imgP"
+        src="./images/Horse.jpg"
+        style="border-style: none"
+        alt="horse image"
+      />
+    </div>
+    <br />
+    <div class="selectors">
+      <h3>Selectors</h3>
+      <p>Basic Selectors</p>
+      <ul>
+        <li>* reset selector</li>
+        <li># id selector</li>
+        <li>. class selector</li>
+        <li>Element selector e.g (p, img etc)</li>
+      </ul>
+    </div>
+    <div class="selectors">
+      <h3>Descendant/Child Combinator</h3>
+      <ol>
+        <li>
+          Descendant and child combinator is used to select all of the same
+          Descendant element in the div or any other parent tag or class or id
+          of the element. <br />
+          <br />
+        </li>
+        <li>All the h3 elements in this div are descendant elements.</li>
+      </ol>
+      <p>The syntax is given in the list below</p>
+      <ul>
+        <li>
+          element descendant tag { } followed by the style properties. <br />
+          Also the symbol ( > ) is used to style the direct child of an element
+          or class.
+        </li>
+        <li>
+          div h1 {} -- This syntax is used to style all the h1 elements within
+          the div.
+        </li>
+        <li>
+          div > h1 {} -- This syntax is used to style the direct h1 of the div
+          element.
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div id="TransForm">
+      <h3>TRANSFORM & ANIMATION</h3>
+      <p>
+        Transform property is usually used to arrange divs around the webpage,
+        inorder to move the div to other places in the webpage, the property
+        transform would be used with the value translate(). <br />
+        <br />
+        <span>Transform translateX/Y</span> is used for the direction. X with a
+        positive value moves the div to the right while a negative value moves
+        the div to the left. Y with a positive value moves the div to the bottom
+        while a negative value moves the div to the top. The box below was moved
+        with a transform property in the CSS file. The property for the syntax
+        would be (transform: translateX/Y(Value)). The shorthand for X/Y would
+        be transform: translate(X_value, Y_value). <br />
+        <br />
+        <span>Transform scale</span> is another value used to resize the scale
+        of the div element, i.e it makes the div smaller or bigger depending on
+        the value used, the default value is (1), to scale smaller, the value
+        has to be below 1 e.g (0.9 and lower), to scale bigger, the value would
+        be above 1 e.g (1.1 and above). The syntax is (transform:
+        scaleX/Y(value)).The shorthand for X/Y would be transform:
+        scale(X_value, Y_value). <br />
+        <br />
+        <span>Transform rotateZ</span> is used to rotate the div element based
+        on the inputted degree. The syntax is (transform:
+        rotateZ(Value_deg)).The shorthand would be transform: rotate(Value_deg).
+        <br />
+        <br />
+        <span>Trasform SkewX/Y</span> is used to make the div element
+        skew/slant. The syntax is (transform: skewX/Y(Value_deg)). The syntax is
+        (transform: skewX/Y(Value_deg)).The shorthand for X/Y would be
+        transform: scale(X_value_deg, Y_value_deg). The below div elements has
+        all the transform property.
+      </p>
+      <br />
+      <br />
+      <div id="translate" class="TransForm">
+        Translate(50px, 25px)
+        <p class="TransForm">Addie</p>
+      </div>
+      <div id="scale" class="TransForm">
+        Scale(-0.8, 1.5)
+        <p class="TransForm">Addie</p>
+      </div>
+      <div id="rotate" class="TransForm">
+        Rotate(45deg)
+        <p class="TransForm">Addie</p>
+      </div>
+      <div id="skew" class="TransForm">
+        Skew(-15deg, -10deg)
+        <p class="TransForm">Addie</p>
+      </div>
+      <br />
+      <br />
+    </div>
+    <br />
+    <br />
+    <!-- TRANSITIONS -->
+    <div id="TransI">
+      <h3>TRANSITION</h3>
+      <p>
+        Transition is used to create a state of change to an element within a
+        period of time. Change over time. Transition is used with the hover
+        pseudo class to display the transition when the element is hovered on.
+        Transition moves from 0-100% i.e back and forth.
+        <br />
+        <br />
+        Transition-property is the property used to input the required
+        transition property such as background color, border-radius, color,
+        font-size, transform etc. The properties required when hovered would be
+        written inside the pseudo hover class of the element. An example is
+        given below. <br />
+        <br />
+        div.TransI { <br />
+        margin: 0 50px; <br />
+        width: 150px;<br />
+        height: 200px;<br />
+        font-weight: bold;<br />
+        display: inline-block;<br />
+        }<br />
+        div#wife {<br />
+        background: url(../HTML/images/wife.jpg);<br />
+        background-size: 100%;<br />
+        transition-property: background border;<br />
+        transition-duration: 5s;<br />
+        transition-timing-function: linear;<br />
+        }<br />
+        div#wife:hover {<br />
+        background: url(../HTML/images/Modella.jpeg);<br />
+        background-size: cover;<br />
+        border-radius: 50%;<br />
+        }<br />
+        The effect of the css transition is shown in the pictures below. Place
+        your mouse over the images to see the transition.
+      </p>
+    </div>
+    <br />
+    <div id="wife" class="TransI"></div>
+    <div id="modella" class="TransI"></div>
+    <div id="beauty" class="TransI"></div>
+    <br />
+    <!-- ANIMATIONS -->
+    <div>
+      <h3>ANIMATION</h3>
+      <p>
+        Animation is quite similar to transition but the major difference is
+        transition goes from a state of 0-100% but animation states can be
+        specified. The syntax for animation would be @keyframes animation_name {
+        styling properties } after which the name of the animation, duration and
+        count would be written in the element styling. An example of animation
+        styling is given below.
+      </p>
+      <p class="examples">
+        .anime { <br />
+        margin: 10px 75px; <br />
+        width: 175px; <br />
+        height: 250px; <br />
+        display: inline-block; <br />
+        /* animation-name: anime; <br />
+        animation-duration: 15s; <br />
+        animation-iteration-count: 3; */ <br />
+        animation: /*name*/ anime /*Duration*/ 10s /*count*/ 2; <br />
+        } <br />
+        #beaut { <br />
+        background: url(../HTML/images/beaut.jpg); <br />
+        background-size: cover; <br />
+        } <br />
+        #pro { <br />
+        background: url(../HTML/images/pro.jpeg); <br />
+        background-size: cover; <br />
+        } <br />
+        #angel { <br />
+        background: url(../HTML/images/angel.jpg); <br />
+        background-size: cover; <br />
+        } <br />
+        #wiz { <br />
+        background: url(../HTML/images/wizgirl.jpg); <br />
+        background-size: cover; <br />
+        } <br />
+        @keyframes anime { <br />
+        20% { <br />
+        box-shadow: 15px 10px 5px gray; <br />
+        } <br />
+        50% { <br />
+        transform: skew(75deg); <br />
+        } <br />
+        60% { <br />
+        transform: rotate(250deg); <br />
+        } <br />
+        70% { <br />
+        background: url(../HTML/images/wife.jpg); <br />
+        background-size: cover; <br />
+        } <br />
+        90% { <br />
+        transform: translateX(200px); <br />
+        } <br />
+        100% { <br />
+        transform: translate(10px 50px); <br />
+        } <br />
+        } <br />
+        Below is the effect of the style.
+      </p>
+    </div>
+    <div id="wiz" class="anime"></div>
+    <div id="pro" class="anime"></div>
+    <div id="angel" class="anime"></div>
+    <div id="beaut" class="anime"></div>
+    <br />
+    <p>
+      Animation fill mode is used to define the values outside of the animation.
+      With animation fill mode and a value of <em>forward</em>, the animation
+      takes stays with the final property and value that has been specified at
+      the end of the keyframe, which might be at 100% instead of returning back
+      to the starting position and value.
+    </p>
+    <!-- CSS VARIABLES -->
+    <div>
+      <h3 id="var">CSS VARIABLES</h3>
+      <p>
+        Css variables gives a flexibilty in the html document. It is used to
+        store properties and values that can be reused in the throught out the
+        document. The syntax is given as follows: --varName:value. To use it,
+        the syntax for use would be property:var(--varName). There are two types
+        of scopes for the variable, that is global and local. The global
+        variables are setup in the pseudo_root_element (:root{}), the local one
+        is set up in specific elements
+      </p>
+      <h3>FontAwesome Icons</h3>
+      <p>
+        FontAwesome is a free icon service provider. Icons can be downloaded
+        from
+        <a href="https://fontawesome.com/start" target="_blank">here</a> and
+        used in the HTML document. <br />
+        .fab { <br />
+        margin: 10px; <br />
+        position: relative; <br />
+        bottom: 0; <br />
+        left: 0; <br />
+        font-size: 2rem; <br />
+        right: -20rem; <br />
+        } <br />
+      </p>
+      <h3 id="textShadow">Text/Box-Shadow</h3>
+      <p>
+        Text/box shadow is is used to add shadows to a text or a box element.
+        The syntax for styling an element to have a shadow is: text-shadow:
+        x-axis value, y-axis value, blurr and color. The values define the way
+        the shadow renders. Below is an example of the css code used to style
+        the heading above. <br />
+        <em>text-shadow: 0px 5px 5px grey;</em> <br />
+        Below is an example of box shadow used <a href="#modella">here</a>
+        <br />
+        <em>
+          box-shadow: /*rightside */ 5px /*Bottom*/ 15px /*opacity*/ 20px
+          /*around*/ 5px grey; </em
+        >. More Text shadows can be easily be generated from this
+        <a href="https://css3gen.com/text-shadow/" target="_blank">site</a>.
+        Also
+        <a href="https://www.cssmatic.com/box-shadow" target="_blank"
+          >click here</a
+        >
+        to generate more box shadow designs.
+      </p>
+      <br />
+      <h3>Browser Prefixes</h3>
+      <p>
+        Brower prefixes are the ways for different browsers to add support for
+        the latest CSS features. They are needed for compatibility of webpages
+        across all browsers. It is also known as Vendor prefixes. An external
+        resource that is helpful is
+        <a href="https://caniuse.com/" target="_blank">caniuse.com</a> <br />
+        This is an example of what browser prefixes look like:
+        <em>
+          <strong>-webkit</strong>-box-shadow: 10px 10px 5px 0px
+          rgba(0,0,0,0.75); <strong>-moz</strong>-box-shadow: 10px 10px 5px 0px
+          rgba(0,0,0,0.75); box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); </em
+        >. You can copy and paste your code
+        <a href="https://autoprefixer.github.io/" target="_blank">here</a> to
+        have the code prefixed.
+      </p>
+      <br />
+      <!-- Semantic HTML -->
+      <h3>Semantic HTML</h3>
+      <p>
+        This is where you use specific element to structure HTML contents
+        instead of using div, span, etc. Semantic tags provide a better
+        structure for the webpage. The image below shows a few semantic tags.
+      </p>
+      <img src="./images/semantic_tags.png" alt="an image of semantic_tags" />
+      <br />
+      <h3>Emmet Snippets</h3>
+      <p>
+        Emmet is a set of plug-ins for text editors that allow for high-speed
+        coding and editing in HTML. To learn more about emmet snippets. Go here:
+        <a href="https://docs.emmet.io/cheatsheet-a5.pdf" target="_blank"
+          >Emmet snippets</a
+        >. <br />
+        Emmet shortcut can be used to create a div that has a class and a tag
+        without having to type them the traditional way. E.g Clicking enter
+        after typing <q>.header#sidenote</q> will display as this
+        <em> &lt;div class="header" id="sidnote"&gt;&lt;/div&gt; </em>. Where
+        (#) declares the id and (.) declares the class. <br />
+        Another example is a shortcut for creating a listing. <br />
+        div>ul>li*3. Where (>) declares the child (li) in the (ul) in the
+        ancestor (div), and (*) decalres how many list tags would be rendered.
+        The ruslt would be like this <br />
+        <em>
+          &lt;div&gt; <br />
+          &lt;ul&gt; <br />
+          &lt;li&gt;&lt;/li&gt; <br />
+          &lt;li&gt;&lt;/li&gt; <br />
+          &lt;li&gt;&lt;/li&gt; <br />
+          &lt;/ul&gt; <br />
+          &lt;/div&gt; <br />
+        </em>
+      </p>
+    </div>
+    <!-- FlexBox -->
+    <div class="flexbox">
+      <h4>CSS FLEXBOX</h4>
+      <p>
+        Flexbox stands for <q>Flexible box</q> is a display type that acomes
+        with properties that allow you to arrange items easily. It is an very
+        good alternative to float property. It is divided into container and
+        items. The container can be in form of a div element. <br />
+        <br />
+        .flexContainer { <br />
+        background: purple; <br />
+        margin: 20px 5px; <br />
+        width: 50vw; <br />
+        height: 30vh; <br />
+        display: flex; <br />
+        flex-direction: row; <br />
+        justify-content: space-evenly; /*This is responsible for horizontal
+        alignment*/ <br />
+        align-items: center; /*This is responsible for vertical alignment*/
+        <br />
+        } <br />
+        Below is the CSS code and the output design.
+      </p>
+    </div>
+    <div class="flexContainer">
+      <div class="Flexitems">A</div>
+      <div class="Flexitems">B</div>
+      <div class="Flexitems">C</div>
+      <div class="Flexitems">D</div>
+      <div class="Flexitems">E</div>
+      <!-- <div class="Flexitems">F</div>
+      <div class="Flexitems">G</div>
+      <div class="Flexitems">H</div>
+      <div class="Flexitems">I</div>
+      <div class="Flexitems">J</div>
+      <div class="Flexitems">K</div>
+      <div class="Flexitems">L</div>
+      <div class="Flexitems">M</div>
+      <div class="Flexitems">N</div>
+      <div class="Flexitems">O</div> -->
+    </div>
+    <p>
+      <em>Flex direction</em> makes the content of the flex align either in a
+      column or a row. Although column is the default one. We also have values
+      such as row-reverse while reverses the order of the items in a row of the
+      flex container. Also column-reverse whihc also reverses the items but in a
+      column. The syntax is given below. <br />
+      flex-direction: row; <br />
+      flex-direction: row-reverse; <br />
+      flex-direction: column; <br />
+      flex-direction: column-reverse; <br />
+      You use the flex direction and wrap only after the display has been set to
+      flex.
+    </p>
+    <p>
+      <em>Flex Wrap</em> is a property that pushes the flex items to the next
+      line so as not to have continous unbroken line of characters. The syntax
+      is: <br />
+      flex-wrap: wrap; (This wraps the content to the next line) <br />
+      flex-wrap: nowrap; (This is the default value of the html document. The
+      items stay on a single line without moving to the next.) <br />
+      flex-wrap: wrap-reverse; (This value wraps the items in a reverse order.
+      It takes the test above the line of characters instead of below it.
+      Inorder words the line before and not after.)
+    </p>
+    <p>
+      There are two main elements that are used to justify and align flex items
+      inside the container. These elements contain 3 main values and 2 special
+      values which aligns them in a very different pattern. The first would be:
+      <br />
+      <em>justify-content</em>: this property aligns the flex items horizontally
+      and the 3 main values are: Flex-end (right hand side), <br />
+      Flex-Start(Left hand side) and <br />
+      Center(middle). <br />
+      The special values are: <br />
+      Space-between (creates equal spaces between the flex items.) and <br />
+      Space-around (creates spaces around all the items in the conatainer,
+      including the edges, more like margin all around.) <br />
+      <em>align-items</em>: this property aligns items vertically and the 3 main
+      values are the same as does with justify-content. That is:
+      <br />
+      Flex-end (bottom), <br />
+      Flex-Start(top) and <br />
+      Center(middle). <br />
+      The special values are: <br />Baseline (This value keeps the items on the
+      same baseline no matter the font size or height of the property.) and
+      <br />
+      Stretch (This is the default value of the flex where the item is streched
+      from top to botton of the flex container)
+    </p>
+    <p>
+      Flex Item Order is used to change how the items are positioned or ordered
+      in the container. The syntax would be to add an inline style to the items
+      and use the property <q>order: ;</q> the value would range from 1 to the
+      number of items that are in the container. 0 can not be used as it is the
+      default value that keeps the items in their original order. Below is an
+      example of the syntax: <br />
+      <em>
+        style="order: 5" A <br />
+        style="order: 4" B <br />
+        style="order: 3" C <br />
+        style="order: 1" D <br />
+        style="order: 2" E <br />
+      </em>
+    </p>
+    <div class="flexContainer">
+      <div class="Flexitems" style="order: 5">A</div>
+      <div class="Flexitems" style="order: 4">B</div>
+      <div class="Flexitems" style="order: 3">C</div>
+      <div class="Flexitems" style="order: 1">D</div>
+      <div class="Flexitems" style="order: 2">E</div>
+    </div>
+    <br />
+
+    <h3>SHRINK/GROW AND BASIS</h3>
+    <p>
+      These properties are responsible for the responsiveness of flexbox. <br />
+      <br />
+      Flex Basis defines the minimum width of a flex item. The value can be any
+      number in pixels. <br /><br />
+      Flex-grow defines the same amount of extra space between items in a
+      flex-box. Set Flex grow to 1 for all items in the flex if they are to have
+      the same amount of extra space but if one item will have a defined amount
+      extra space, set the value of the item to 1 while others retain the
+      default value which is 0. <br /><br />
+      Flex-shrink defines the rate of shrinkage of each item relative to the
+      rest of the items and the default value is 1. Set the value of flex shrink
+      to zero if a particular item in the box will not be shrinked when the
+      minimum shrink of the webpage is reached. A value above 1 makes the item
+      shrink as many times as the defined value.For instance, if the value of a
+      flex-shrink is set to 3, it means the item that has that value would
+      shrink 3 times faster than the remaining items in the flex. <br />
+      These flex itmes are very important as it helps the webpage to be
+      responsive to any device or size of screen that it would be displayed on.
+      Below is an example of the effect of the flex grow,shrink and basis
+      properties. <br />
+      <br />
+      &lt;div class="Flexitems" style="flex-grow: 1; flex-shrink: 0; flex-basis:
+      30%" &gt; G &lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="flex-grow: 1; flex-shrink: 2; flex-basis:
+      15%" &gt; H &lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="flex-grow: 5; flex-shrink: 3; flex-basis:
+      10%" &gt; I &lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="flex-grow: 1; flex-shrink: 1; flex-basis:
+      15%" &gt; J &lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="flex-grow: 1; flex-shrink: 5; flex-basis:
+      10" &gt; K &lt;/div&gt; <br />
+      &lt;/div&gt; <br />
+      <br />
+      A shorthand can be used for the code written above. Flex property is the
+      element that will be used to write the shorthand for the code. The syntax
+      is: <em>Flex: grow(value) shrink(value) basis(value) </em> e.g: &lt;div
+      class="Flexitems" style="<strong>flex: 1 2 15%"</strong>&gt;H&lt;/div &gt;
+    </p>
+    <div class="flexContainer">
+      <div
+        class="Flexitems"
+        style="flex-grow: 1; flex-shrink: 0; flex-basis: 30%"
+      >
+        G
+      </div>
+      <div class="Flexitems" style="flex: 1 2 15%">H</div>
+      <div
+        class="Flexitems"
+        style="flex-grow: 5; flex-shrink: 3; flex-basis: 10%"
+      >
+        I
+      </div>
+      <div
+        class="Flexitems"
+        style="flex-grow: 1; flex-shrink: 1; flex-basis: 15%"
+      >
+        J
+      </div>
+      <div
+        class="Flexitems"
+        style="flex-grow: 1; flex-shrink: 5; flex-basis: 10"
+      >
+        K
+      </div>
+    </div>
+    <p>
+      Using align-self to arrange each item in the flex-box. An example is shown
+      below. <br />
+      &lt;div class="flexContainer"&gt; <br />
+      &lt;div class="Flexitems" style="order: 5; align-self:
+      flex-start;"&gt;A&lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="order: 4;
+      align-self:center;"&gt;B&lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="order: 3;
+      align-self:flex-end;"&gt;C&lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="order: 1;
+      align-self:flex-start;"&gt;D&lt;/div&gt; <br />
+      &lt;div class="Flexitems" style="order: 2;
+      align-self:center;"&gt;E&lt;/div&gt; &lt;/div&gt; <br />
+    </p>
+
+    <div class="flexContainer">
+      <div class="Flexitems" style="order: 5; align-self: flex-start">A</div>
+      <div class="Flexitems" style="order: 4; align-self: center">B</div>
+      <div class="Flexitems" style="order: 3; align-self: flex-end">C</div>
+      <div class="Flexitems" style="order: 1; align-self: flex-start">D</div>
+      <div class="Flexitems" style="order: 2; align-self: center">E</div>
+    </div>
+    <h4>GRID</h4>
+    <p>
+      Grid is a display type that can be used to activate certain layout
+      features on a container element. The major difference between grids and
+      flexbox: grid is more manual that flexbox, grid focuses on both width and
+      height while flex focuses majorly on the width of the flex items. <br />
+      <br />
+      Template rows and columns can be created in the container, the properties
+      for creating rows and columns is
+      <em>grid-template-columns and grid-template-rows</em>.
+      grid-template-columns: 50px 50px 10px; This property specifies the number
+      of rows/columns that the grid container would be divided into. The number
+      of values inputted determines the number of rows/columns that will be in
+      the grid. Using auto as the value for rows and columns would be the
+      perfect value, as it would make the grid responsive to any device and also
+      divides the items evenly in the grid container. Note the number of auto
+      defined in the value, determines the number of rows/columns that would be
+      created. <br />
+      <em>justify-content</em>: this property aligns the grid items horizontally
+      and the 3 main values are: end (right hand side), <br />
+      Start(Left hand side) and <br />
+      Center(middle). <br />
+      The special values are: <br />
+      Space-evenly (creates even spaces between the grid items.) and <br />
+      Space-around (creates spaces around all the items in the conatainer,
+      including the edges, more like margin all around.) <br />
+      <em>align-content</em>: this property aligns items vertically and the 3
+      main values are the same as does with justify-content. That is:
+      <br />
+      end (bottom), <br />
+      Start(top) and <br />
+      Center(middle). <br />
+      <br />
+      <em>grid-column-start/end</em> is used to determine a grid item's size and
+      location within the grid by contributing a line, a span, or nothing
+      (automatic) to its grid placement. <br />
+      <br />
+      <em>grid-area</em> is a shorthand for grid-column/row-start/end that
+      determine a grid item's size (by adding span after the slash before the
+      next value) and location within the grid by contributing a line, a span,
+      or nothing (automatic) to its grid placement. Shorthand for
+      'grid-row-start', 'grid-column-start', 'grid-row-end', and
+      'grid-column-end'. <br />
+      Below is an example of a CSS code used to style the grid items and the
+      container. <br /><br />
+      Container <br />
+      #grid { <br />
+      background: #5b62c9; <br />
+      margin: 10px; <br />
+      height: 300px;<br />
+      display: grid; /*This property and value is used to change the default
+      dispaly of the div tag container to a grid*/ <br />
+      grid-template-columns: auto auto auto; This property specifies the number
+      of columns that the grid container would be divided into.
+      grid-template-rows: auto auto; }<br />
+      <br />
+      Items <br />
+      .grid { <br />
+      margin: 10px; <br />
+      color: white; <br />
+      font-size: 1.5rem; <br />
+      line-height: 40px; <br />
+      width: 70px; <br />
+      text-align: center; <br />
+      }
+    </p>
+    <br />
+    <!-- inline styles used for grid-area(colum/row start and ends i.e placement and size) -->
+    <div id="grid">
+      <div
+        class="grid"
+        style="background: lawngreen; grid-column: 2/2; grid-row: 2/2"
+      >
+        1
+      </div>
+      <div class="grid" style="background: coral; grid-column: 1/1">2</div>
+      <div
+        class="grid"
+        style="
+          background: #65e2d8;
+          grid-area: 1 /*(row start)*/ / 3 /*(column start)*/ / span 2
+            /*(row end)*/ / span 1 /*(column end)*/;
+        "
+      >
+        3
+      </div>
+      <div
+        class="grid"
+        style="background: pink; grid-row: 1/1; grid-column: 2/2"
+      >
+        4
+      </div>
+      <div class="grid" style="background: orange; grid-row: 1/1">5</div>
+    </div>
+    <br />
+    <br />
+    <!-- Div Container -->
+    <div
+      class="grid"
+      style="background: lawngreen; grid-column: 2/2; grid-row: 2/2"
+    >
+      1
+    </div>
+    <div class="grid" style="background: coral; grid-column: 1/1">2</div>
+    <div
+      class="grid"
+      style="
+        background: #65e2d8;
+        grid-area: 1 /*(row start)*/ / 3 /*(column start)*/ / span 2
+          /*(row end)*/ / span 1 /*(column end)*/;
+      "
+    >
+      3
+    </div>
+    <div class="grid" style="background: pink; grid-row: 1/1; grid-column: 2/2">
+      4
+    </div>
+    <div class="grid" style="background: orange; grid-row: 1/1">5</div>
+
+    <h6>ICONS</h6>
+    <span id="icons">
+      <a href="https://www.facebook.com/" target="_blank"
+        ><i style="color: blue" class="fab fa-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/prince_esquare/" target="_blank">
+        <i id="insta" class="fab fa-instagram"></i
+      ></a>
+      <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+      <a
+        href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ"
+        target="_blank"
+        ><i style="color: red" class="fab fa-youtube"></i
+      ></a>
+      <a href="https://twitter.com/Prince19e" target="_blank"
+        ><i style="color: grey" class="fab fa-twitter"></i
+      ></a>
+    </span>
+    <!-- Javascript notes -->
+    <h1>JAVASCRIPT</h1>
+    <p></p>
+    <!-- JS -->
+    <script src="Scripts/index.js"></script>
+  </body>
+</html>
